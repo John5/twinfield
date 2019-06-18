@@ -2,6 +2,7 @@
 
 namespace PhpTwinfield\Enums;
 
+use PhpTwinfield\Services\DeclarationsService;
 use PhpTwinfield\Services\FinderService;
 use PhpTwinfield\Services\ProcessXmlService;
 
@@ -28,4 +29,9 @@ class Services extends \MyCLabs\Enum\Enum
      * Twinfield Process XML web service methods. See below for an overview of the supported XML messages.
      */
     protected const PROCESSXML = ProcessXmlService::class;
+
+    /**
+     * Declarations web service for VAT/BTW declarations.
+     */
+    protected const DECLARATIONS = DeclarationsService::class;
 }

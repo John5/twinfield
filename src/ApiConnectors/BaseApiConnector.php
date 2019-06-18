@@ -35,7 +35,7 @@ abstract class BaseApiConnector implements LoggerAwareInterface
     /**
      * @var AuthenticatedConnection
      */
-    private $connection;
+    protected $connection;
 
     /**
      * @var int
