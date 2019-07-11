@@ -111,7 +111,7 @@ class DeclarationsService extends BaseService
   }
 
   public function callSetToApproved(int $documentId): \stdClass {  
-    $response = $this->SetToSent(
+    $response = $this->SetToApproved(
       [
         'documentId' => $documentId
       ]
@@ -120,7 +120,7 @@ class DeclarationsService extends BaseService
   }
 
   public function callSetToRejected(int $documentId): \stdClass {  
-    $response = $this->SetToSent(
+    $response = $this->SetToRejected(
       [
         'documentId' => $documentId
       ]

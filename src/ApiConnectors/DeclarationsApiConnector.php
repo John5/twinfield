@@ -84,19 +84,16 @@ class DeclarationsApiConnector extends BaseApiConnector
 
   public function setToSent(int $documentId) {
     $response = $this->getDeclarationsService()->callSetToSent($documentId);
-    dd($response);
     return $response;
   }
 
   public function setToApproved(int $documentId) {
     $response = $this->getDeclarationsService()->callSetToApproved($documentId);
-    dd($response);
     return $response;
   }
 
-  public function setToDeclined(int $documentId) {
-    $response = $this->getDeclarationsService()->callSetToDeclined($documentId);
-    dd($response);
+  public function setToRejected(int $documentId) {
+    $response = $this->getDeclarationsService()->callSetToRejected($documentId);
     return $response;
   }
 
